@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class Address
+    class Address
     {
         //private int number;
         //private string street;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class Node
+    class Node
     {
         public Node LeftNode { get; set; }
         public Node RightNode { get; set; }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AssessmentApendixClasses
+namespace MyNunitSoln
 {
     public class Program
     {   

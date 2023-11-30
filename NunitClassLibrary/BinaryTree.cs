@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class BinaryTree
+    class BinaryTree
     {
         public Node Root { get; set; }
 

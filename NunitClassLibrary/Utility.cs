@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class Utility
+    class Utility
     {
         // Part 3
         public static bool LinearSeachOfObjectAsc<T>(T[] array, T target) where T : IComparable<T> {

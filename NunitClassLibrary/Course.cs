@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class Course : IComparable<Course>, IComparable
+    class Course : IComparable<Course>, IComparable
     {
         //private int courseCode;
         //private string courseName;

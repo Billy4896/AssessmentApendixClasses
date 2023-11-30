@@ -4,17 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using Student;
 
-namespace Nunit_Testing
+
+
+namespace NunitTestingFrameWork
 {
     [TestFixture]
     public class NunitTesting
     {
-        test.Student
-
         [Test]
-        public void linearSearchTesting() 
+        public void testLinearSearchOfObjectAsc() 
         {
             Student[] students = new Student[10];
 
@@ -44,7 +43,6 @@ namespace Nunit_Testing
                     3,
                     new Enrollment()
                 );
-
         }
     }
 }

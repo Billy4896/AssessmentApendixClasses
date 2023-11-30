@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class Enrollment
+    class Enrollment
     {
         //private string dateEnrolled;
         //private string grade;

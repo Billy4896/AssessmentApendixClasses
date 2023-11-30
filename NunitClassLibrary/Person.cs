@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class Person
+    class Person
     {
         //private string name;
         //private string email;

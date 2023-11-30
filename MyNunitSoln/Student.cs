@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssessmentApendixClasses
+namespace MyNunitSoln
 {
     public sealed class Student : Person, IComparable<Student>, IComparable
     {

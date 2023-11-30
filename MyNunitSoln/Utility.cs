@@ -4,11 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssessmentApendixClasses
+namespace MyNunitSoln
 {
     public class Utility
     {
         // Part 3
+        /// <summary>
+        /// Performs a lineaer search in ascending order to find the target object inside the array.
+        /// </summary>
+        /// <typeparam name="T">The type of objects in the array.</typeparam>
+        /// <param name="array">The sorted array to search.</param>
+        /// <param name="target">The target object to find in the array.</param>
+        /// <returns>True if the target is found; else false.</returns>
         public static bool LinearSeachOfObjectAsc<T>(T[] array, T target) where T : IComparable<T> {
             try
             {
@@ -33,6 +40,11 @@ namespace AssessmentApendixClasses
             }
         }
 
+        /// <summary>
+        /// Sorts an array of objects in ascending order using the Bubble sort algorithm.
+        /// </summary>
+        /// <typeparam name="T">The type of objects in the array.</typeparam>
+        /// <param name="array">The sorted array to search.</param>
         public static void BubbleSort<T>(T[] array) where T : IComparable<T>
         {
             try {
@@ -58,6 +70,11 @@ namespace AssessmentApendixClasses
 
         }
 
+        /// <summary>
+        /// Sorts an array of objects in Descending order using the Bubble sort algorithm.
+        /// </summary>
+        /// <typeparam name="T">The type of objects in the array.</typeparam>
+        /// <param name="array">The sorted array to search.</param>
         public static void BubbleSortDescending<T>(T[] array) where T : IComparable<T>
         {
             int n = array.Length;
@@ -77,6 +94,13 @@ namespace AssessmentApendixClasses
 
 
         // Part 4
+        /// <summary>
+        /// Performs a binary search to find the index of the specified target in a sorted array.
+        /// </summary>
+        /// <typeparam name="T">The type of objects in the array.</typeparam>
+        /// <param name="array">The sorted array to search.</param>
+        /// <param name="target">The target object to find in the array.</param>
+        /// <returns>If found, the index of the target; else -1.</returns>
         public static int BinarySearch<T>(T[] array, T target) where T : IComparable<T>
         {
             try
@@ -113,6 +137,13 @@ namespace AssessmentApendixClasses
         }
 
 
+        /// <summary>
+        /// Performs a sequential search to find the index of the specified target in an array.
+        /// </summary>
+        /// <typeparam name="T">The type of objects in the array.</typeparam>
+        /// <param name="array">The sorted array to search.</param>
+        /// <param name="target">If found, the index of the target; else -1.</param>
+        /// <returns>If found, the index of the target; else -1.</returns>
         public static int SequentialSearch<T>(T[] array, T target) where T : IComparable<T>
         {
             for (int i = 0; i < array.Length; i++)

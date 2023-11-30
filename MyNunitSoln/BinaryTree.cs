@@ -4,12 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssessmentApendixClasses
+namespace MyNunitSoln
 {
+    /// <summary>
+    /// Implementation of the binary tree data structure.
+    /// </summary>
     public class BinaryTree
     {
+        /// <summary>
+        /// Gets or sets the root node of the binary tree
+        /// </summary>
         public Node Root { get; set; }
 
+        /// <summary>
+        /// Adds a new node with a value to the binary tree.
+        /// </summary>
+        /// <param name="value">The value to be added to the tree.</param>
+        /// <returns>If the value is added returns true; else false.</returns>
         public bool Add(int value)
         {
             Node before = null, after = this.Root;
@@ -44,11 +55,22 @@ namespace AssessmentApendixClasses
             return true;
         }
 
+        /// <summary>
+        /// Finds the node with the value specified in the parameters.
+        /// </summary>
+        /// <param name="value">The value to be searched for.</param>
+        /// <returns>The node with the specified value, else null.</returns>
         public Node Find(int value)
         {
             return this.Find(value, this.Root);
         }
 
+        /// <summary>
+        /// Using the find method to find a node with the specified value in the binary tree.
+        /// </summary>
+        /// <param name="value">The value to be searched for.</param>
+        /// <param name="parent">The starting node for the search.</param>
+        /// <returns>The node with the specified value, else false.</returns>
         private Node Find(int value, Node parent)
         {
             if (parent != null)
@@ -63,11 +85,21 @@ namespace AssessmentApendixClasses
             return null;
         }
 
+        /// <summary>
+        /// Removes the node with the specified value from the binary tree.
+        /// </summary>
+        /// <param name="value">The value to be removed.</param>
         public void Remove(int value)
         {
             this.Root = Remove(this.Root, value);
         }
 
+        /// <summary>
+        /// Remove a node with a specified key from the binary search tree.
+        /// </summary>
+        /// <param name="parent">The current parent node being considered</param>
+        /// <param name="key">The key value of the node to be removed.</param>
+        /// <returns>The modified parent node after the removal operation.</returns>
         private Node Remove(Node parent, int key)
         {
             if (parent == null) return parent;
@@ -95,6 +127,11 @@ namespace AssessmentApendixClasses
             return parent;
         }
 
+        /// <summary>
+        /// Find the minimum value in a subtree.
+        /// </summary>
+        /// <param name="node">The starting node for finding the minimum value.</param>
+        /// <returns>The minimum value in the subtree.</returns>
         private int MinValue(Node node)
         {
             int minv = node.Data;
@@ -108,6 +145,10 @@ namespace AssessmentApendixClasses
             return minv;
         }
 
+        /// <summary>
+        /// Traverses the binary tree in pre-order.
+        /// </summary>
+        /// <param name="parent">The starting node for traversal.</param>
         public void TraversePreOrder(Node parent)
         {
             if (parent != null)
@@ -118,6 +159,10 @@ namespace AssessmentApendixClasses
             }
         }
 
+        /// <summary>
+        /// Traverses the binary tree in in-order.
+        /// </summary>
+        /// <param name="parent">The starting node for traversal.</param>
         public void TraverseInOrder(Node parent)
         {
             if (parent != null)
@@ -128,6 +173,10 @@ namespace AssessmentApendixClasses
             }
         }
 
+        /// <summary>
+        /// Traverses the binary tree in post-order.
+        /// </summary>
+        /// <param name="parent">The starting node for traversal.</param>
         public void TraversePostOrder(Node parent)
         {
             if (parent != null)

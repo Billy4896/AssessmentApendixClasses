@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public class DoublyLinkedList<T> :
+    class DoublyLinkedList<T> :
         System.Collections.Generic.ICollection<T>
     {
         public LinkedListNode<T> Head

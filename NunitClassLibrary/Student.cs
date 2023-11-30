@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssessmentApendixClasses
 {
-    public sealed class Student : Person, IComparable<Student>, IComparable
+    sealed class Student : Person, IComparable<Student>, IComparable
     {
         //private string program;
         //private DateTime dateRegistered;
